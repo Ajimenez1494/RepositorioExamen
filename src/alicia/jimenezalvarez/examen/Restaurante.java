@@ -28,10 +28,13 @@ public class Restaurante {
        Bebida bebidas[]= {bebida1, bebida2};
        
 	   // y 2 cartas una de las cartas tendrá tres platos y una bebida y la otra carta 2 platos y una bebida
-	   Carta carta1 = new Carta("Menu general", platos, bebidas);
-	   Carta carta2 = new Carta("Menu general", platos2, bebidas);
+	   Carta carta1 = new Carta("Menu general", platos, bebida1);
+	   Carta carta2 = new Carta("Menu del día", platos2, bebida2);
+	   Carta cartas[]= {carta1, carta2};
 
-
+		
 	}
+         
 
+	
 }

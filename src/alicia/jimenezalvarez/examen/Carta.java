@@ -31,5 +31,15 @@ public class Carta {
 		this.bebidas = bebidas;
 	}
 	
+	public Carta(String nombre, Plato[] platos, Bebida bebida) {
+		this.nombre = nombre;
+		this.platos = platos;
+		
+	}
+	// Método que muestre el contenido de cada carta mostrando solo los platos disponibles
+	public void mostrarCarta(Carta carta) {
 	
+		
+	};
+
 }
