@@ -89,8 +89,8 @@ public class Restaurante {
 			for (Bebida bebidaList : arrayBebidas) {
 				i= i +bebidaList.getPrecio();
 			}
-			
-			System.out.println("El precio final es: " + i);
+			String nombre=cartaList.getNombre();
+			System.out.println("El precio final del " + nombre+ " es: " + i);
 
 		}
 
