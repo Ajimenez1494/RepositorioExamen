@@ -6,6 +6,12 @@ public class Carta {
 	private Bebida bebidas[];
 	
 	
+	public Carta(String nombre, Plato[] platos, Bebida[] bebidas) {
+		super();
+		this.nombre = nombre;
+		this.platos = platos;
+		this.bebidas = bebidas;
+	}
 	public String getNombre() {
 		return nombre;
 	}
