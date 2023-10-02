@@ -1,6 +1,7 @@
 package alicia.jimenezalvarez.examen;
 
 public class Carta {
+	
 	private String nombre;
 	private Plato platos[];
 	private Bebida bebidas[];
