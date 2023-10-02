@@ -32,9 +32,14 @@ public class Restaurante {
 	   Carta carta2 = new Carta("Menu del día", platos2, bebida2);
 	   Carta cartas[]= {carta1, carta2};
 
-		
+	   
 	}
          
 
 	
 }
+//     4. Método que muestre el contenido de cada carta mostrando solo los platos disponibles (1.5 puntos)
+  
+//	   5. Método que pida al usuario qué carta de la que tiene el restaurante desea. (1.5 puntos)
+//	   6. Indicar el importe de todos los productos de la carta seleccionada por el usuario. (2 puntos)
+	  
