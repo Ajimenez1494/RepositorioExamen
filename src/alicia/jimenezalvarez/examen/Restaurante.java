@@ -38,7 +38,8 @@ public class Restaurante {
 
 		Restaurante restaurante = new Restaurante();
 		restaurante.mostrarCarta(cartas);
-		restaurante.eligeCarta(cartas);
+		//restaurante.eligeCarta(cartas);
+		restaurante.indicarImporte(cartas);
 	}
 //  4. Método que muestre el contenido de cada carta mostrando solo los platos disponibles (1.5 puntos)
 
@@ -59,28 +60,43 @@ public class Restaurante {
 	}
 
 //	   5. Método que pida al usuario qué carta de la que tiene el restaurante desea. (1.5 puntos)
-	    public void eligeCarta(Carta...cartas ) {
+	public void eligeCarta(Carta... cartas) {
 		for (Carta cartaList : cartas) {
+
+			String carta = pideDato("Elige una carta:" + cartaList.getNombre());
+			System.out.println("Has elegido la carta: " + carta);
+
+		}
+
+	}
+
+	// 6. Indicar el importe de todos los productos de la carta seleccionada por el
+	// usuario. (2 puntos)
+	public void indicarImporte(Carta...cartas) {
+		for (Carta cartaList :cartas) {
+		Plato arrayPlatos[] = cartaList.getPlatos();
+		double i = 0;
+		for (Plato platoList : arrayPlatos)
 		
-        String carta=pideDato("Elige una carta:" + cartaList.getNombre());
-        System.out.println("Has elegido la carta: " + carta);
-        
-       }
-        
+		{
+			if (platoList.isDisponible())
 		
+			i= i + platoList.getPrecio();
+			
+		}
+		System.out.println("El precio final es: "+ i );
 		
 		}
-	
-	
-	 public static String pideDato (String texto) {
-		String reply=null;
+		
+
+	}
+
+	public static String pideDato(String texto) {
+		String reply = null;
 		System.out.println(texto);
 		Scanner scan = new Scanner(System.in);
 		reply = scan.nextLine();
-		
+
 		return reply;
 	}
-	}
-
-
-//	   6. Indicar el importe de todos los productos de la carta seleccionada por el usuario. (2 puntos)
+}
